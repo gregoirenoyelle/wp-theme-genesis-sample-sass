@@ -5,5 +5,5 @@
 
 ## Todo
 
-* Add Genesis Reponsive Menu
+* Compile style for responsive menu
 * Organize functions files
