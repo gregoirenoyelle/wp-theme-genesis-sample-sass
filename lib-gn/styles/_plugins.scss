@@ -1,0 +1,75 @@
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget {
+
+	&,
+	.widget-title {
+		color: #fff;
+	}
+
+	input,
+	input:focus {
+		border: 1px solid #000;
+	}
+
+	input {
+		font-size: 16px;
+		margin-bottom: 16px;
+	}
+
+	input[type="submit"] {
+		background-color: #e5554e;
+		color: #fff;
+		margin: 0;
+		width: 100%;
+	}
+
+	input:hover[type="submit"] {
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+.sidebar .widget.enews-widget {
+	background-color: #000;
+}
+
+
+.enews form + p {
+	margin-top: 24px;
+}
+
+/* Gravity forms
+--------------------------------------------- */
+div.gform_wrapper {
+
+	input[type="email"],
+	input[type="text"],
+	textarea,
+	.ginput_complex label {
+		font-size: 18px;
+		padding: 16px;
+	}
+
+	.ginput_complex label {
+		padding: 0;
+	}
+
+	li,
+	form li {
+		margin: 16px 0 0;
+	}
+
+	.gform_footer input[type=submit] {
+		font-size: 16px;
+		padding: 16px 24px;
+	}
+}
+
+/* jetpack
+--------------------------------------------- */
+#wpstats {
+	display: none;
+}
+

@@ -1,0 +1,31 @@
+
+ //--------------------------------------------------------------
+// Variables
+//--------------------------------------------------------------
+
+// Colors
+$color-site-bg:      #f5f5f5;
+$color-font:         #000000;
+$color-link:         #e5554e;
+$color-link-visited: $color-link;
+$color-link-hover:   #000000;
+
+// Fonts
+$font-sans:  Lato, sans-serif;
+$font-serif: Georgia, Times, "Times New Roman", serif;
+$font-mono:  "Courier 10 Pitch", Courier, monospace;
+
+
+ //--------------------------------------------------------------
+// Mixins
+//--------------------------------------------------------------
+
+// Transition
+// Usage: @include transition(all, 0.2s, ease-in-out);
+@mixin transition($transition-property, $transition-time, $method) {
+    -webkit-transition: $transition-property $transition-time $method;
+    -moz-transition: $transition-property $transition-time $method;
+    -ms-transition: $transition-property $transition-time $method;
+    -o-transition: $transition-property $transition-time $method;
+    transition: $transition-property $transition-time $method;
+}
