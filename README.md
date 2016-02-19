@@ -5,5 +5,4 @@
 
 ## Todo
 
-* Compile style for responsive menu
 * Organize functions files
