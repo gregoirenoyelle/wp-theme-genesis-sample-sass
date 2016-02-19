@@ -80,3 +80,6 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
+# Extra
+_st/
