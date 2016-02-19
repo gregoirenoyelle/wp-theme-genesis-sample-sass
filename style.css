@@ -897,6 +897,25 @@ Site Navigation
 .nav-secondary {
   background-color: #fff; }
 
+/* Responsive Menu
+--------------------------------------------- */
+.responsive-menu-icon {
+  cursor: pointer;
+  display: none;
+  margin-bottom: -1px;
+  text-align: center; }
+
+.responsive-menu-icon::before {
+  color: #fff;
+  content: "\f333";
+  display: inline-block;
+  font: normal 20px/1 'dashicons';
+  margin: 0 auto;
+  padding: 10px; }
+
+.site-header .responsive-menu-icon::before {
+  padding: 0; }
+
 /*!
 Content Area
 ---------------------------------------------------------------------------------------------------- */
@@ -1226,7 +1245,83 @@ Media Queries
     width: 100%; }
 
   .sidebar .widget.enews-widget {
-    padding: 40px; } }
+    padding: 40px; }
+
+  .genesis-nav-menu.responsive-menu,
+  .genesis-nav-menu.responsive-menu > .menu-item > .sub-menu {
+    display: none; }
+
+  .genesis-nav-menu.responsive-menu .menu-item,
+  .responsive-menu-icon {
+    display: block; }
+
+  .genesis-nav-menu.responsive-menu .menu-item {
+    margin: 0; }
+
+  .genesis-nav-menu.responsive-menu .menu-item:hover {
+    position: static; }
+
+  .genesis-nav-menu.responsive-menu .current-menu-item > a,
+  .genesis-nav-menu.responsive-menu .sub-menu .current-menu-item > a:hover,
+  .genesis-nav-menu.responsive-menu > .first > a,
+  .genesis-nav-menu.responsive-menu > .last > a,
+  .genesis-nav-menu.responsive-menu a,
+  .genesis-nav-menu.responsive-menu a:hover,
+  .genesis-nav-menu.responsive-menu li:hover > a {
+    background: none;
+    color: #fff;
+    line-height: 1;
+    padding: 18px 20px; }
+
+  .genesis-nav-menu.responsive-menu .menu-item-has-children {
+    cursor: pointer; }
+
+  .genesis-nav-menu.responsive-menu .menu-item-has-children > a {
+    margin-right: 60px; }
+
+  .genesis-nav-menu.responsive-menu > .menu-item-has-children:before {
+    content: "\f347";
+    float: right;
+    font: normal 16px/1 'dashicons';
+    height: 16px;
+    padding: 16px 20px;
+    right: 0;
+    text-align: right;
+    z-index: 9999; }
+
+  .genesis-nav-menu.responsive-menu .menu-open.menu-item-has-children:before {
+    content: "\f343"; }
+
+  .nav-primary .genesis-nav-menu.responsive-menu > .menu-item-has-children:before {
+    color: #fff; }
+
+  .genesis-nav-menu.responsive-menu .sub-menu {
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    left: auto;
+    opacity: 1;
+    position: relative;
+    -moz-transition: opacity .4s ease-in-out;
+    -ms-transition: opacity .4s ease-in-out;
+    -o-transition: opacity .4s ease-in-out;
+    -webkit-transition: opacity .4s ease-in-out;
+    transition: opacity .4s ease-in-out;
+    width: 100%;
+    z-index: 99; }
+
+  .genesis-nav-menu.responsive-menu .sub-menu .sub-menu {
+    background-color: transparent;
+    margin: 0;
+    padding-left: 25px; }
+
+  .genesis-nav-menu.responsive-menu .sub-menu li a,
+  .genesis-nav-menu.responsive-menu .sub-menu li a:hover {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 14px 20px;
+    position: relative;
+    width: 100%; } }
 /* Table of Contents
 
 	- Imports
