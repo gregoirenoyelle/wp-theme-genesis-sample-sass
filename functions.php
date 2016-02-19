@@ -50,4 +50,4 @@ add_theme_support( 'custom-background' );
 add_theme_support( 'genesis-footer-widgets', 3 );
 
 // gn fichiers perso
-require_once( CHILD_DIR.'/lib-gn/functions-sup.php' );
+require_once( CHILD_DIR.'/lib/functions-sup.php' );
