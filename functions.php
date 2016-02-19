@@ -2,6 +2,9 @@
 //* Start the engine
 include_once( get_template_directory() . '/lib/init.php' );
 
+//* Editor style
+add_editor_style( 'editor-style.css' );
+
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Genesis Sample Theme' );
 define( 'CHILD_THEME_URL', 'http://www.studiopress.com/' );
