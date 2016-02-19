@@ -132,3 +132,30 @@
 .nav-secondary {
 	background-color: #fff;
 }
+
+
+
+/* Responsive Menu
+--------------------------------------------- */
+
+.responsive-menu-icon {
+	cursor: pointer;
+	display: none;
+	margin-bottom: -1px;
+	text-align: center;
+}
+
+.responsive-menu-icon::before {
+	color: #fff;
+	content: "\f333";
+	display: inline-block;
+	font: normal 20px/1 'dashicons';
+	margin: 0 auto;
+	padding: 10px;
+}
+
+.site-header .responsive-menu-icon::before {
+	padding: 0;
+}
+
+
